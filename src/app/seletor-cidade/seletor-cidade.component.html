@@ -1,0 +1,16 @@
+<div class="container">
+    <mat-card class="custom-card">
+        <div class="card-header">
+            <h2>  Clima Cidades  </h2>
+        </div>
+        <div class="card-content">
+            <label for="cidade">Selecione a cidade abaixo:</label>
+            <select id="cidade" [(ngModel)]="selectedCity" (ngModelChange)="buscarClima()">
+                <option *ngFor="let city of cities" [value]="city.nome">
+                    {{ city.nome }}, {{ city.estado }}
+                </option>
+            </select>
+            <button mat-raised-button color="primary" (click)="buscarClima()">Conferir clima</button>
+        </div>
+    </mat-card>
+</div>

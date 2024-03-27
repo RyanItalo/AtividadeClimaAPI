@@ -1,0 +1,13 @@
+.container {
+  background: rgb(188,232,184);
+background: linear-gradient(90deg, rgba(188,232,184,1) 35%, rgba(0,212,255,1) 82%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+   }
+
+   .card-spacing {
+    margin-bottom: 20px;
+   }
